@@ -1,0 +1,371 @@
+Unnamed: 0,source_text,plagiarized_text,label,text_join
+0,Researchers have discovered a new species of butterfly in the Amazon rainforest.,Scientists have found a previously unknown butterfly species in the Amazon jungle.,1,researcher discovered new specie butterfly amazon rainforest scientist found previously unknown butterfly specie amazon jungle
+1,The moon orbits the Earth in approximately 27.3 days.,Our natural satellite takes around 27.3 days to complete one orbit around our planet.,1,moon orbit earth approximately 273 day natural satellite take around 273 day complete one orbit around planet
+2,Water is composed of two hydrogen atoms and one oxygen atom.,H2O consists of 2 hydrogen atoms and 1 oxygen atom.,1,water composed two hydrogen atom one oxygen atom h2o consists 2 hydrogen atom 1 oxygen atom
+3,The history of Rome dates back to 753 BC.,Rome has a long history that can be traced back to 753 BC.,1,history rome date back 753 bc rome long history traced back 753 bc
+4,Pluto was once considered the ninth planet in our solar system.,"In the past, Pluto was classified as the ninth planet in our sun's planetary system.",1,pluto considered ninth planet solar system past pluto classified ninth planet sun planetary system
+5,This is a unique and original sentence.,This sentence is unique and original.,0,unique original sentence sentence unique original
+6,Artificial intelligence is reshaping industries.,AI is changing the landscape of various sectors.,0,artificial intelligence reshaping industry ai changing landscape various sector
+7,Python is a popular programming language for data science.,Data science often relies on Python as a widely used programming language.,0,python popular programming language data science data science often relies python widely used programming language
+8,The Earth revolves around the Sun in a nearly circular orbit.,Our planet follows an almost circular path as it moves around the central star.,0,earth revolves around sun nearly circular orbit planet follows almost circular path move around central star
+9,Paris is the capital of France.,France's capital city is Paris.,0,paris capital france france capital city paris
+10,Plants use photosynthesis to convert sunlight into energy.,Photosynthesis in plants transforms sunlight into usable energy.,1,plant use photosynthesis convert sunlight energy photosynthesis plant transforms sunlight usable energy
+11,The Great Wall of China is one of the Seven Wonders of the World.,"Among the Seven Wonders, the Great Wall of China stands out.",1,great wall china one seven wonder world among seven wonder great wall china stand
+12,Gravity is the force that attracts two bodies towards each other.,The force pulling two masses together is known as gravity.,1,gravity force attracts two body towards force pulling two mass together known gravity
+13,A healthy diet includes a variety of fruits and vegetables.,Eating a mix of fruits and vegetables is part of a healthy diet.,1,healthy diet includes variety fruit vegetable eating mix fruit vegetable part healthy diet
+14,New York City is known for its bustling Times Square.,Times Square is a famous spot in New York City.,1,new york city known bustling time square time square famous spot new york city
+15,The Sahara is the largest hot desert in the world.,The world's largest hot desert is the Sahara.,1,sahara largest hot desert world world largest hot desert sahara
+16,Shakespeare is regarded as one of the greatest playwrights in history.,One of history's greatest playwrights is Shakespeare.,1,shakespeare regarded one greatest playwright history one history greatest playwright shakespeare
+17,The Pacific Ocean is the largest and deepest ocean on Earth.,Earth's largest and deepest ocean is the Pacific.,1,pacific ocean largest deepest ocean earth earth largest deepest ocean pacific
+18,Climate change is a significant global issue.,Global warming is a major issue affecting the planet.,1,climate change significant global issue global warming major issue affecting planet
+19,Birds have feathers and lay eggs.,Feathers and egg-laying are characteristic of birds.,1,bird feather lay egg feather egglaying characteristic bird
+20,The internet has revolutionized communication.,Communication has been transformed by the internet.,1,internet revolutionized communication communication transformed internet
+21,The human brain consists of billions of neurons.,Billions of neurons make up the human brain.,1,human brain consists billion neuron billion neuron make human brain
+22,Photosynthesis occurs in the chloroplasts of plant cells.,Plant cells' chloroplasts are where photosynthesis takes place.,1,photosynthesis occurs chloroplast plant cell plant cell chloroplast photosynthesis take place
+23,Mount Everest is the highest mountain in the world.,The world's highest mountain is Mount Everest.,1,mount everest highest mountain world world highest mountain mount everest
+24,Leonardo da Vinci painted the Mona Lisa.,The Mona Lisa was painted by Leonardo da Vinci.,1,leonardo da vinci painted mona lisa mona lisa painted leonardo da vinci
+25,The Amazon River is the longest river in South America.,South America's longest river is the Amazon River.,1,amazon river longest river south america south america longest river amazon river
+26,Albert Einstein developed the theory of relativity.,The theory of relativity was developed by Albert Einstein.,1,albert einstein developed theory relativity theory relativity developed albert einstein
+27,The Pyramids of Giza are located in Egypt.,Egypt is home to the Pyramids of Giza.,1,pyramid giza located egypt egypt home pyramid giza
+28,The chemical symbol for gold is Au.,Au is the chemical symbol for gold.,1,chemical symbol gold au au chemical symbol gold
+29,Mars is often called the Red Planet.,The Red Planet is a common name for Mars.,1,mar often called red planet red planet common name mar
+30,The Great Barrier Reef is located off the coast of Australia.,Off Australia's coast lies the Great Barrier Reef.,1,great barrier reef located coast australia australia coast lie great barrier reef
+31,Venus is the second planet from the Sun.,The Sun's second planet is Venus.,1,venus second planet sun sun second planet venus
+32,Beethoven was a famous composer and pianist.,A renowned composer and pianist was Beethoven.,1,beethoven famous composer pianist renowned composer pianist beethoven
+33,Hydrogen is the lightest element on the periodic table.,The lightest element on the periodic table is hydrogen.,1,hydrogen lightest element periodic table lightest element periodic table hydrogen
+34,"The speed of light in a vacuum is approximately 299,792 kilometers per second.","In a vacuum, light travels at about 299,792 kilometers per second.",1,speed light vacuum approximately 299792 kilometer per second vacuum light travel 299792 kilometer per second
+35,Alexander Graham Bell is credited with inventing the telephone.,The invention of the telephone is credited to Alexander Graham Bell.,1,alexander graham bell credited inventing telephone invention telephone credited alexander graham bell
+36,Antarctica is the coldest continent on Earth.,Earth's coldest continent is Antarctica.,1,antarctica coldest continent earth earth coldest continent antarctica
+37,"The Taj Mahal is located in Agra, India.","Agra, India is where the Taj Mahal is located.",1,taj mahal located agra india agra india taj mahal located
+38,Mitochondria are known as the powerhouse of the cell.,The powerhouse of the cell is known as mitochondria.,1,mitochondrion known powerhouse cell powerhouse cell known mitochondrion
+39,The Nile River flows through northeastern Africa.,Northeastern Africa is traversed by the Nile River.,1,nile river flow northeastern africa northeastern africa traversed nile river
+40,Thomas Edison invented the electric light bulb.,The electric light bulb was invented by Thomas Edison.,1,thomas edison invented electric light bulb electric light bulb invented thomas edison
+41,The Pacific Ocean covers more area than any other ocean.,No ocean covers more area than the Pacific Ocean.,1,pacific ocean cover area ocean ocean cover area pacific ocean
+42,Honey never spoils and can last for thousands of years.,Honey can last for thousands of years without spoiling.,1,honey never spoil last thousand year honey last thousand year without spoiling
+43,Neil Armstrong was the first person to walk on the Moon.,The first person to walk on the Moon was Neil Armstrong.,1,neil armstrong first person walk moon first person walk moon neil armstrong
+44,Julius Caesar was a key figure in the rise of the Roman Empire.,The rise of the Roman Empire saw Julius Caesar as a key figure.,1,julius caesar key figure rise roman empire rise roman empire saw julius caesar key figure
+45,Oxygen is essential for human respiration.,Human respiration requires oxygen.,1,oxygen essential human respiration human respiration requires oxygen
+46,"The Eiffel Tower is a famous landmark in Paris, France.","Paris, France is known for the Eiffel Tower.",1,eiffel tower famous landmark paris france paris france known eiffel tower
+47,Saturn is known for its prominent ring system.,The ring system of Saturn is prominent.,1,saturn known prominent ring system ring system saturn prominent
+48,Marie Curie won Nobel Prizes in both Physics and Chemistry.,Nobel Prizes in both Physics and Chemistry were awarded to Marie Curie.,1,marie curie nobel prize physic chemistry nobel prize physic chemistry awarded marie curie
+49,The Chernobyl disaster occurred in 1986.,1986 was the year of the Chernobyl disaster.,1,chernobyl disaster occurred 1986 1986 year chernobyl disaster
+50,Honey bees communicate through a series of dance movements.,A series of dance movements is how honey bees communicate.,1,honey bee communicate series dance movement series dance movement honey bee communicate
+51,The Rosetta Stone helped decipher Egyptian hieroglyphs.,Egyptian hieroglyphs were deciphered with the help of the Rosetta Stone.,1,rosetta stone helped decipher egyptian hieroglyph egyptian hieroglyph deciphered help rosetta stone
+52,Dolphins are highly intelligent marine mammals.,Marine mammals known for their high intelligence are dolphins.,1,dolphin highly intelligent marine mammal marine mammal known high intelligence dolphin
+53,Mercury is the closest planet to the Sun.,The Sun's nearest planet is Mercury.,1,mercury closest planet sun sun nearest planet mercury
+54,The human heart pumps blood throughout the body.,Blood is pumped throughout the body by the human heart.,1,human heart pump blood throughout body blood pumped throughout body human heart
+55,Tsunamis are caused by underwater earthquakes or volcanic eruptions.,Underwater earthquakes or volcanic eruptions cause tsunamis.,1,tsunami caused underwater earthquake volcanic eruption underwater earthquake volcanic eruption cause tsunami
+56,"The Grand Canyon is located in the state of Arizona, USA.","Arizona, USA is home to the Grand Canyon.",1,grand canyon located state arizona usa arizona usa home grand canyon
+57,Isaac Newton formulated the laws of motion and universal gravitation.,The laws of motion and universal gravitation were formulated by Isaac Newton.,1,isaac newton formulated law motion universal gravitation law motion universal gravitation formulated isaac newton
+58,The Blue Whale is the largest animal on Earth.,Earth's largest animal is the Blue Whale.,1,blue whale largest animal earth earth largest animal blue whale
+59,Lightning is a sudden electrostatic discharge during a storm.,A storm's sudden electrostatic discharge is lightning.,1,lightning sudden electrostatic discharge storm storm sudden electrostatic discharge lightning
+60,Charles Darwin proposed the theory of natural selection.,The theory of natural selection was proposed by Charles Darwin.,1,charles darwin proposed theory natural selection theory natural selection proposed charles darwin
+61,"The Golden Gate Bridge is located in San Francisco, California.","San Francisco, California is where the Golden Gate Bridge is located.",1,golden gate bridge located san francisco california san francisco california golden gate bridge located
+62,Photosynthesis converts carbon dioxide and water into glucose and oxygen.,Carbon dioxide and water are converted into glucose and oxygen through photosynthesis.,1,photosynthesis convert carbon dioxide water glucose oxygen carbon dioxide water converted glucose oxygen photosynthesis
+63,The Dead Sea is one of the saltiest bodies of water in the world.,One of the world's saltiest bodies of water is the Dead Sea.,1,dead sea one saltiest body water world one world saltiest body water dead sea
+64,Albert Einstein's equation E=mc² relates energy to mass.,The relation between energy and mass is given by Albert Einstein's equation E=mc².,1,albert einstein equation emc² relates energy mass relation energy mass given albert einstein equation emc²
+65,The Amazon Rainforest is often called the 'lungs of the Earth'.,The 'lungs of the Earth' is a common nickname for the Amazon Rainforest.,1,amazon rainforest often called lung earth lung earth common nickname amazon rainforest
+66,Venus rotates in the opposite direction to most planets in the solar system.,Most planets in the solar system rotate in the opposite direction to Venus.,1,venus rotates opposite direction planet solar system planet solar system rotate opposite direction venus
+67,The Leaning Tower of Pisa is famous for its unintended tilt.,The unintended tilt of the Leaning Tower of Pisa makes it famous.,1,leaning tower pisa famous unintended tilt unintended tilt leaning tower pisa make famous
+68,Jupiter has the shortest day of all the planets in the solar system.,The shortest day of all the planets in the solar system is on Jupiter.,1,jupiter shortest day planet solar system shortest day planet solar system jupiter
+69,Florence Nightingale is considered the founder of modern nursing.,The founder of modern nursing is considered to be Florence Nightingale.,1,florence nightingale considered founder modern nursing founder modern nursing considered florence nightingale
+70,"Hurricanes are large, powerful storms that form over warm ocean waters.","Warm ocean waters give rise to large, powerful storms known as hurricanes.",1,hurricane large powerful storm form warm ocean water warm ocean water give rise large powerful storm known hurricane
+71,The Colosseum in Rome is an ancient amphitheater.,Rome's ancient amphitheater is the Colosseum.,1,colosseum rome ancient amphitheater rome ancient amphitheater colosseum
+72,Honey bees are vital for pollination of many crops.,Pollination of many crops is crucially carried out by honey bees.,1,honey bee vital pollination many crop pollination many crop crucially carried honey bee
+73,The Mona Lisa is displayed in the Louvre Museum in Paris.,The Louvre Museum in Paris displays the Mona Lisa.,1,mona lisa displayed louvre museum paris louvre museum paris display mona lisa
+74,The Earth's atmosphere is composed primarily of nitrogen and oxygen.,Nitrogen and oxygen primarily make up the Earth's atmosphere.,1,earth atmosphere composed primarily nitrogen oxygen nitrogen oxygen primarily make earth atmosphere
+75,"The Great Wall of China stretches over 13,000 miles.","Over 13,000 miles long is the Great Wall of China.",1,great wall china stretch 13000 mile 13000 mile long great wall china
+76,Neil Armstrong was the first person to set foot on the moon.,The first person to set foot on the moon was Neil Armstrong.,1,neil armstrong first person set foot moon first person set foot moon neil armstrong
+77,Water freezes at 0 degrees Celsius.,0 degrees Celsius is the freezing point of water.,1,water freeze 0 degree celsius 0 degree celsius freezing point water
+78,The Leaning Tower of Pisa is known for its unintended tilt.,The unintended tilt of the Leaning Tower of Pisa is well-known.,1,leaning tower pisa known unintended tilt unintended tilt leaning tower pisa wellknown
+79,Electric cars produce no emissions during operation.,"During operation, electric cars produce no emissions.",1,electric car produce emission operation operation electric car produce emission
+80,Bees produce honey from the nectar of flowers.,Honey is produced by bees from the nectar of flowers.,1,bee produce honey nectar flower honey produced bee nectar flower
+81,The Sun is the center of our solar system.,Our solar system's center is the Sun.,1,sun center solar system solar system center sun
+83,Mount Kilimanjaro is the highest mountain in Africa.,Africa's highest mountain is Mount Kilimanjaro.,1,mount kilimanjaro highest mountain africa africa highest mountain mount kilimanjaro
+84,The Eiffel Tower is one of the most recognizable structures in the world.,One of the world's most recognizable structures is the Eiffel Tower.,1,eiffel tower one recognizable structure world one world recognizable structure eiffel tower
+85,Julius Caesar was assassinated in 44 BC.,"In 44 BC, Julius Caesar was assassinated.",1,julius caesar assassinated 44 bc 44 bc julius caesar assassinated
+86,The Pacific Ocean is the largest and deepest ocean on Earth.,Earth's largest and deepest ocean is the Pacific Ocean.,1,pacific ocean largest deepest ocean earth earth largest deepest ocean pacific ocean
+87,Venus is the hottest planet in our solar system.,The hottest planet in our solar system is Venus.,1,venus hottest planet solar system hottest planet solar system venus
+88,Shakespeare wrote 'Romeo and Juliet'.,'Romeo and Juliet' was written by Shakespeare.,1,shakespeare wrote romeo juliet romeo juliet written shakespeare
+91,Elephants are the largest land animals on Earth.,The largest land animals on Earth are elephants.,1,elephant largest land animal earth largest land animal earth elephant
+93,DNA stands for deoxyribonucleic acid.,Deoxyribonucleic acid is abbreviated as DNA.,1,dna stand deoxyribonucleic acid deoxyribonucleic acid abbreviated dna
+104,The Sahara Desert is the largest hot desert in the world.,The world's largest hot desert is the Sahara Desert.,1,sahara desert largest hot desert world world largest hot desert sahara desert
+107,The Great Wall of China is visible from space.,"From space, the Great Wall of China is visible.",1,great wall china visible space space great wall china visible
+110,The Amazon Rainforest is the largest tropical rainforest in the world.,The world's largest tropical rainforest is the Amazon Rainforest.,1,amazon rainforest largest tropical rainforest world world largest tropical rainforest amazon rainforest
+120,Lightning is a natural phenomenon.,A natural phenomenon is lightning.,0,lightning natural phenomenon natural phenomenon lightning
+121,Python is used for web development.,Web development uses Python.,0,python used web development web development us python
+122,Bananas are rich in potassium.,Potassium is rich in bananas.,0,banana rich potassium potassium rich banana
+123,The sky is blue.,Blue is the sky.,0,sky blue blue sky
+124,JavaScript is popular for front-end development.,Front-end development is popular for JavaScript.,0,javascript popular frontend development frontend development popular javascript
+125,Dogs are known as man's best friend.,Man's best friend is known as dogs.,0,dog known man best friend man best friend known dog
+126,The sun rises in the east.,"In the east, the sun rises.",0,sun rise east east sun rise
+127,Books are a source of knowledge.,A source of knowledge are books.,0,book source knowledge source knowledge book
+128,Cars need fuel to run.,"To run, cars need fuel.",0,car need fuel run run car need fuel
+129,Water boils at 100 degrees Celsius.,"At 100 degrees Celsius, water boils.",0,water boil 100 degree celsius 100 degree celsius water boil
+130,Chocolate is made from cocoa beans.,Cocoa beans make chocolate.,0,chocolate made cocoa bean cocoa bean make chocolate
+131,Birds can fly.,Flying is a capability of birds.,0,bird fly flying capability bird
+132,Coffee contains caffeine.,Caffeine is contained in coffee.,0,coffee contains caffeine caffeine contained coffee
+133,The Earth is round.,Round is the Earth.,0,earth round round earth
+134,Apples are a type of fruit.,A type of fruit is apples.,0,apple type fruit type fruit apple
+135,The color of grass is green.,Green is the color of grass.,0,color grass green green color grass
+136,Rain falls from clouds.,"From clouds, rain falls.",0,rain fall cloud cloud rain fall
+137,Elephants are large animals.,Large animals are elephants.,0,elephant large animal large animal elephant
+138,Fire produces heat.,Heat is produced by fire.,0,fire produce heat heat produced fire
+139,Music can be soothing.,Soothing can be music.,0,music soothing soothing music
+140,The Moon affects tides.,Tides are affected by the Moon.,0,moon affect tide tide affected moon
+141,Cats are often kept as pets.,Pets are often kept as cats.,0,cat often kept pet pet often kept cat
+142,Bread is made from flour.,Flour makes bread.,0,bread made flour flour make bread
+143,Flowers bloom in spring.,"In spring, flowers bloom.",0,flower bloom spring spring flower bloom
+144,The color of the sky is blue.,Blue is the color of the sky.,0,color sky blue blue color sky
+145,Butterflies have colorful wings.,Colorful wings are possessed by butterflies.,0,butterfly colorful wing colorful wing possessed butterfly
+146,Winter is the coldest season.,The coldest season is winter.,0,winter coldest season coldest season winter
+147,Summer is the warmest season.,The warmest season is summer.,0,summer warmest season warmest season summer
+148,Ice melts at 0 degrees Celsius.,"At 0 degrees Celsius, ice melts.",0,ice melt 0 degree celsius 0 degree celsius ice melt
+149,Trees produce oxygen.,Oxygen is produced by trees.,0,tree produce oxygen oxygen produced tree
+150,Sunflowers turn to face the sun.,The sun is faced by sunflowers.,0,sunflower turn face sun sun faced sunflower
+151,Books can be informative.,Informative can be books.,0,book informative informative book
+152,The library is a place to read.,A place to read is the library.,0,library place read place read library
+153,The ocean is vast.,Vast is the ocean.,0,ocean vast vast ocean
+154,Mountains are tall.,Tall are mountains.,0,mountain tall tall mountain
+155,Rivers flow to the sea.,"To the sea, rivers flow.",0,river flow sea sea river flow
+156,Pineapples are tropical fruits.,Tropical fruits are pineapples.,0,pineapple tropical fruit tropical fruit pineapple
+157,Butter is made from milk.,Milk makes butter.,0,butter made milk milk make butter
+158,Rainbows appear after rain.,"After rain, rainbows appear.",0,rainbow appear rain rain rainbow appear
+159,Leaves change color in autumn.,"In autumn, leaves change color.",0,leaf change color autumn autumn leaf change color
+160,Spiders spin webs.,Webs are spun by spiders.,0,spider spin web web spun spider
+161,The Statue of Liberty is located in New York Harbor.,New York Harbor is where the Statue of Liberty stands.,1,statue liberty located new york harbor new york harbor statue liberty stand
+162,The human body is composed of approximately 60% water.,About 60% of the human body is made up of water.,1,human body composed approximately 60 water 60 human body made water
+163,Albert Einstein developed the theory of general relativity.,The theory of general relativity was formulated by Albert Einstein.,1,albert einstein developed theory general relativity theory general relativity formulated albert einstein
+164,The Taj Mahal was built by Emperor Shah Jahan.,Emperor Shah Jahan built the Taj Mahal.,1,taj mahal built emperor shah jahan emperor shah jahan built taj mahal
+165,The Pacific Ocean is the largest ocean on Earth.,The Earth's largest ocean is the Pacific Ocean.,1,pacific ocean largest ocean earth earth largest ocean pacific ocean
+166,Leonardo da Vinci was a famous Italian polymath.,A renowned Italian polymath was Leonardo da Vinci.,1,leonardo da vinci famous italian polymath renowned italian polymath leonardo da vinci
+167,The Amazon River flows through South America.,South America is traversed by the Amazon River.,1,amazon river flow south america south america traversed amazon river
+168,"Thomas Edison held over 1,000 patents.","Over 1,000 patents were held by Thomas Edison.",1,thomas edison held 1000 patent 1000 patent held thomas edison
+169,The Sahara Desert covers much of North Africa.,North Africa is largely covered by the Sahara Desert.,1,sahara desert cover much north africa north africa largely covered sahara desert
+170,Jupiter is the largest planet in our solar system.,The solar system's largest planet is Jupiter.,1,jupiter largest planet solar system solar system largest planet jupiter
+171,The Great Barrier Reef is the world's largest coral reef system.,The largest coral reef system in the world is the Great Barrier Reef.,1,great barrier reef world largest coral reef system largest coral reef system world great barrier reef
+172,"The human heart beats about 100,000 times a day.","About 100,000 beats per day are made by the human heart.",1,human heart beat 100000 time day 100000 beat per day made human heart
+173,Bacteria can reproduce rapidly under ideal conditions.,"Under ideal conditions, bacteria can reproduce quickly.",1,bacteria reproduce rapidly ideal condition ideal condition bacteria reproduce quickly
+174,Venus is often referred to as Earth's sister planet.,Earth's sister planet is often said to be Venus.,1,venus often referred earth sister planet earth sister planet often said venus
+175,The Milky Way is the galaxy that contains our Solar System.,Our Solar System is within the galaxy known as the Milky Way.,1,milky way galaxy contains solar system solar system within galaxy known milky way
+176,The Earth's crust is made up of tectonic plates.,Tectonic plates make up the Earth's crust.,1,earth crust made tectonic plate tectonic plate make earth crust
+177,The Eiffel Tower was completed in 1889.,1889 saw the completion of the Eiffel Tower.,1,eiffel tower completed 1889 1889 saw completion eiffel tower
+178,Photosynthesis occurs in the chloroplasts of plant cells.,Plant cells' chloroplasts are the site of photosynthesis.,1,photosynthesis occurs chloroplast plant cell plant cell chloroplast site photosynthesis
+179,The speed of sound is approximately 343 meters per second in air.,"In air, sound travels at about 343 meters per second.",1,speed sound approximately 343 meter per second air air sound travel 343 meter per second
+180,Bees play a crucial role in pollinating plants.,Pollinating plants is a crucial role played by bees.,1,bee play crucial role pollinating plant pollinating plant crucial role played bee
+181,Mount Everest is located in the Himalayas.,The Himalayas are home to Mount Everest.,1,mount everest located himalaya himalaya home mount everest
+182,The moon affects the Earth's tides.,Earth's tides are affected by the moon.,1,moon affect earth tide earth tide affected moon
+183,The Amazon rainforest is home to a vast number of species.,A vast number of species live in the Amazon rainforest.,1,amazon rainforest home vast number specie vast number specie live amazon rainforest
+184,The Rosetta Stone was key to deciphering Egyptian hieroglyphs.,Deciphering Egyptian hieroglyphs was made possible by the Rosetta Stone.,1,rosetta stone key deciphering egyptian hieroglyph deciphering egyptian hieroglyph made possible rosetta stone
+185,The Pacific Ocean covers more than 60 million square miles.,Over 60 million square miles are covered by the Pacific Ocean.,1,pacific ocean cover 60 million square mile 60 million square mile covered pacific ocean
+186,Albert Einstein was born in Germany.,Germany is the birthplace of Albert Einstein.,1,albert einstein born germany germany birthplace albert einstein
+187,The Sahara Desert is one of the hottest places on Earth.,One of Earth's hottest places is the Sahara Desert.,1,sahara desert one hottest place earth one earth hottest place sahara desert
+188,The Earth's atmosphere protects us from harmful solar radiation.,Harmful solar radiation is blocked by the Earth's atmosphere.,1,earth atmosphere protects u harmful solar radiation harmful solar radiation blocked earth atmosphere
+189,Venus has a very thick atmosphere composed mostly of carbon dioxide.,"A thick atmosphere, mostly carbon dioxide, covers Venus.",1,venus thick atmosphere composed mostly carbon dioxide thick atmosphere mostly carbon dioxide cover venus
+190,The Eiffel Tower was designed by Gustave Eiffel.,Gustave Eiffel designed the Eiffel Tower.,1,eiffel tower designed gustave eiffel gustave eiffel designed eiffel tower
+191,Mars has the largest volcano in the solar system.,The largest volcano in the solar system is on Mars.,1,mar largest volcano solar system largest volcano solar system mar
+192,The Blue Whale is the largest animal ever known to have lived.,The largest known animal ever to have lived is the Blue Whale.,1,blue whale largest animal ever known lived largest known animal ever lived blue whale
+193,The Leaning Tower of Pisa is a freestanding bell tower.,A freestanding bell tower is the Leaning Tower of Pisa.,1,leaning tower pisa freestanding bell tower freestanding bell tower leaning tower pisa
+194,Shakespeare's plays are still performed today.,"Today, Shakespeare's plays are still performed.",1,shakespeare play still performed today today shakespeare play still performed
+195,The Pacific Ocean is the deepest ocean on Earth.,Earth's deepest ocean is the Pacific Ocean.,1,pacific ocean deepest ocean earth earth deepest ocean pacific ocean
+196,Florence Nightingale is known as the founder of modern nursing.,The founder of modern nursing is Florence Nightingale.,1,florence nightingale known founder modern nursing founder modern nursing florence nightingale
+197,Electric cars produce zero emissions while driving.,"While driving, electric cars produce zero emissions.",1,electric car produce zero emission driving driving electric car produce zero emission
+198,The Statue of Liberty was a gift from France.,France gifted the Statue of Liberty.,1,statue liberty gift france france gifted statue liberty
+199,The Amazon River is the second longest river in the world.,The world's second longest river is the Amazon River.,1,amazon river second longest river world world second longest river amazon river
+200,Charles Darwin developed the theory of evolution by natural selection.,The theory of evolution by natural selection was developed by Charles Darwin.,1,charles darwin developed theory evolution natural selection theory evolution natural selection developed charles darwin
+201,Mercury is the smallest planet in our solar system.,The smallest planet in our solar system is Mercury.,1,mercury smallest planet solar system smallest planet solar system mercury
+202,Lightning is a natural electrical discharge.,An electrical discharge occurring naturally is lightning.,1,lightning natural electrical discharge electrical discharge occurring naturally lightning
+203,The Leaning Tower of Pisa leans due to unstable foundation.,Unstable foundation causes the Leaning Tower of Pisa to lean.,1,leaning tower pisa lean due unstable foundation unstable foundation cause leaning tower pisa lean
+204,DNA is the molecule that carries genetic information.,Genetic information is carried by the molecule known as DNA.,1,dna molecule carry genetic information genetic information carried molecule known dna
+205,The human brain has approximately 86 billion neurons.,About 86 billion neurons are in the human brain.,1,human brain approximately 86 billion neuron 86 billion neuron human brain
+206,The Amazon Rainforest is often called the 'lungs of the planet'.,The 'lungs of the planet' often refer to the Amazon Rainforest.,1,amazon rainforest often called lung planet lung planet often refer amazon rainforest
+207,Venus has a surface temperature hot enough to melt lead.,The surface temperature of Venus is hot enough to melt lead.,1,venus surface temperature hot enough melt lead surface temperature venus hot enough melt lead
+208,Thomas Edison invented the phonograph.,The phonograph was invented by Thomas Edison.,1,thomas edison invented phonograph phonograph invented thomas edison
+209,Daily exercise promotes good health.,Good health is promoted by daily exercise.,0,daily exercise promotes good health good health promoted daily exercise
+210,Effective communication prevents misunderstandings.,Misunderstandings are prevented by effective communication.,0,effective communication prevents misunderstanding misunderstanding prevented effective communication
+211,Positive thinking can lead to better outcomes.,Better outcomes are achieved through positive thinking.,0,positive thinking lead better outcome better outcome achieved positive thinking
+212,Learning a new language opens up opportunities.,Opportunities are opened up by learning a new language.,0,learning new language open opportunity opportunity opened learning new language
+213,Teamwork leads to more efficient problem solving.,Problems are solved more efficiently through teamwork.,0,teamwork lead efficient problem solving problem solved efficiently teamwork
+214,Time management is crucial for productivity.,Productivity relies on effective time management.,0,time management crucial productivity productivity relies effective time management
+215,Balanced diets contribute to overall wellness.,Overall wellness is enhanced by balanced diets.,0,balanced diet contribute overall wellness overall wellness enhanced balanced diet
+216,History helps us understand our present.,Understanding our present is aided by history.,0,history help u understand present understanding present aided history
+217,Art can express complex emotions.,Complex emotions are expressed through art.,0,art express complex emotion complex emotion expressed art
+218,Sustainable practices protect our environment.,Our environment is protected by sustainable practices.,0,sustainable practice protect environment environment protected sustainable practice
+219,Critical thinking is essential in decision making.,Decision making is improved by critical thinking.,0,critical thinking essential decision making decision making improved critical thinking
+220,Good habits form the basis of a successful life.,A successful life is built on good habits.,0,good habit form basis successful life successful life built good habit
+221,Volunteering builds community connections.,Community connections are strengthened by volunteering.,0,volunteering build community connection community connection strengthened volunteering
+222,Meditation can enhance mental clarity.,Mental clarity is improved by meditation.,0,meditation enhance mental clarity mental clarity improved meditation
+223,Quality sleep is vital for overall health.,Overall health is supported by quality sleep.,0,quality sleep vital overall health overall health supported quality sleep
+224,Education broadens our perspective.,Our perspective is broadened by education.,0,education broadens perspective perspective broadened education
+225,Gardening can be a therapeutic activity.,Therapeutic benefits can be found in gardening.,0,gardening therapeutic activity therapeutic benefit found gardening
+226,Adventures make life more exciting.,Life becomes more exciting through adventures.,0,adventure make life exciting life becomes exciting adventure
+227,Technology is advancing at a rapid pace.,The pace of technological advancement is rapid.,0,technology advancing rapid pace pace technological advancement rapid
+228,Networking can lead to career opportunities.,Career opportunities arise through networking.,0,networking lead career opportunity career opportunity arise networking
+229,Sharks have existed for over 400 million years.,"For over 400 million years, sharks have existed.",1,shark existed 400 million year 400 million year shark existed
+230,Mount Everest is the highest peak in the world.,The world's highest peak is Mount Everest.,1,mount everest highest peak world world highest peak mount everest
+231,Bees can recognize human faces.,Human faces can be recognized by bees.,1,bee recognize human face human face recognized bee
+232,The Great Wall of China was built over several dynasties.,Several dynasties saw the building of the Great Wall of China.,1,great wall china built several dynasty several dynasty saw building great wall china
+233,The human body contains 206 bones.,206 bones are contained in the human body.,1,human body contains 206 bone 206 bone contained human body
+234,Albert Einstein's equation E=mc² is famous.,"The equation E=mc², by Albert Einstein, is famous.",1,albert einstein equation emc² famous equation emc² albert einstein famous
+235,Saturn's rings are made of ice and rock.,Ice and rock make up Saturn's rings.,1,saturn ring made ice rock ice rock make saturn ring
+236,The Milky Way galaxy is spiral-shaped.,A spiral shape describes the Milky Way galaxy.,1,milky way galaxy spiralshaped spiral shape describes milky way galaxy
+237,The speed of light is the fastest speed in the universe.,The universe's fastest speed is the speed of light.,1,speed light fastest speed universe universe fastest speed speed light
+238,Shakespeare's works are considered literary classics.,Literary classics include Shakespeare's works.,1,shakespeare work considered literary classic literary classic include shakespeare work
+239,The Pacific Ocean is larger than all the landmasses combined.,All landmasses combined are smaller than the Pacific Ocean.,1,pacific ocean larger landmass combined landmass combined smaller pacific ocean
+240,Mount Everest is part of the Himalaya mountain range.,The Himalaya mountain range includes Mount Everest.,1,mount everest part himalaya mountain range himalaya mountain range includes mount everest
+241,"The Great Wall of China is over 13,000 miles long.","Over 13,000 miles long is the Great Wall of China.",1,great wall china 13000 mile long 13000 mile long great wall china
+242,The Earth rotates on its axis once every 24 hours.,"Every 24 hours, the Earth rotates on its axis.",1,earth rotates axis every 24 hour every 24 hour earth rotates axis
+243,The Great Barrier Reef is a UNESCO World Heritage site.,A UNESCO World Heritage site is the Great Barrier Reef.,1,great barrier reef unesco world heritage site unesco world heritage site great barrier reef
+244,Julius Caesar was a Roman general and statesman.,A Roman general and statesman was Julius Caesar.,1,julius caesar roman general statesman roman general statesman julius caesar
+245,Albert Einstein was awarded the Nobel Prize in Physics in 1921.,"In 1921, the Nobel Prize in Physics was awarded to Albert Einstein.",1,albert einstein awarded nobel prize physic 1921 1921 nobel prize physic awarded albert einstein
+246,The Earth's atmosphere consists of 78% nitrogen.,78% of the Earth's atmosphere consists of nitrogen.,1,earth atmosphere consists 78 nitrogen 78 earth atmosphere consists nitrogen
+247,The Leaning Tower of Pisa is located in Italy.,Italy is home to the Leaning Tower of Pisa.,1,leaning tower pisa located italy italy home leaning tower pisa
+248,The Amazon Rainforest produces 20% of the world's oxygen.,20% of the world's oxygen is produced by the Amazon Rainforest.,1,amazon rainforest produce 20 world oxygen 20 world oxygen produced amazon rainforest
+249,The Earth revolves around the Sun in 365 days.,"In 365 days, the Earth revolves around the Sun.",1,earth revolves around sun 365 day 365 day earth revolves around sun
+250,Venus has a surface covered with volcanoes and lava plains.,Volcanoes and lava plains cover the surface of Venus.,1,venus surface covered volcano lava plain volcano lava plain cover surface venus
+251,Sharks have multiple rows of teeth.,Multiple rows of teeth are possessed by sharks.,1,shark multiple row teeth multiple row teeth possessed shark
+252,The human eye can distinguish approximately 10 million colors.,About 10 million colors can be distinguished by the human eye.,1,human eye distinguish approximately 10 million color 10 million color distinguished human eye
+254,"Mount Everest's summit reaches an altitude of 29,032 feet.","An altitude of 29,032 feet is reached by Mount Everest's summit.",1,mount everest summit reach altitude 29032 foot altitude 29032 foot reached mount everest summit
+255,The Milky Way contains billions of stars.,Billions of stars are contained in the Milky Way.,1,milky way contains billion star billion star contained milky way
+256,Shakespeare's 'Romeo and Juliet' is a tragedy.,A tragedy is Shakespeare's 'Romeo and Juliet'.,1,shakespeare romeo juliet tragedy tragedy shakespeare romeo juliet
+257,"The Pacific Ocean has an average depth of 12,080 feet.","12,080 feet is the average depth of the Pacific Ocean.",1,pacific ocean average depth 12080 foot 12080 foot average depth pacific ocean
+258,Saturn is known for its prominent ring system.,A prominent ring system characterizes Saturn.,1,saturn known prominent ring system prominent ring system characterizes saturn
+259,The Amazon River discharges more water than any other river.,More water is discharged by the Amazon River than any other.,1,amazon river discharge water river water discharged amazon river
+260,The Earth's magnetic field protects us from solar wind.,Solar wind is deflected by the Earth's magnetic field.,1,earth magnetic field protects u solar wind solar wind deflected earth magnetic field
+261,Albert Einstein was a theoretical physicist.,A theoretical physicist was Albert Einstein.,1,albert einstein theoretical physicist theoretical physicist albert einstein
+262,Sharks are apex predators in the ocean.,"In the ocean, apex predators include sharks.",1,shark apex predator ocean ocean apex predator include shark
+263,Mount Everest's height increases due to tectonic activity.,Tectonic activity causes an increase in Mount Everest's height.,1,mount everest height increase due tectonic activity tectonic activity cause increase mount everest height
+264,Venus is the second planet from the Sun.,The second planet from the Sun is Venus.,1,venus second planet sun second planet sun venus
+265,DNA is a double-helix structure.,A double-helix structure describes DNA.,1,dna doublehelix structure doublehelix structure describes dna
+266,Thomas Edison was a prolific inventor.,A prolific inventor was Thomas Edison.,1,thomas edison prolific inventor prolific inventor thomas edison
+267,The Great Wall of China can be seen from space.,"From space, the Great Wall of China is visible.",1,great wall china seen space space great wall china visible
+268,The Pacific Ocean's name means 'peaceful ocean'.,The name of the Pacific Ocean means 'peaceful ocean'.,1,pacific ocean name mean peaceful ocean name pacific ocean mean peaceful ocean
+269,The Milky Way is part of the Local Group of galaxies.,The Local Group of galaxies includes the Milky Way.,1,milky way part local group galaxy local group galaxy includes milky way
+270,Saturn's largest moon is Titan.,Titan is Saturn's largest moon.,1,saturn largest moon titan titan saturn largest moon
+272,The Great Barrier Reef is located off the coast of Australia.,Off the coast of Australia is the Great Barrier Reef.,1,great barrier reef located coast australia coast australia great barrier reef
+273,Venus has a day longer than its year.,A day on Venus is longer than its year.,1,venus day longer year day venus longer year
+274,Sharks have been around for over 400 million years.,"For over 400 million years, sharks have existed.",1,shark around 400 million year 400 million year shark existed
+275,The human brain is protected by the skull.,The skull protects the human brain.,1,human brain protected skull skull protects human brain
+276,Albert Einstein's theory of relativity revolutionized physics.,Physics was revolutionized by Albert Einstein's theory of relativity.,1,albert einstein theory relativity revolutionized physic physic revolutionized albert einstein theory relativity
+277,DNA carries genetic information.,Genetic information is carried by DNA.,1,dna carry genetic information genetic information carried dna
+281,Innovation drives the economy forward.,The economy progresses through innovation.,0,innovation drive economy forward economy progress innovation
+282,Education is the key to personal growth.,Personal growth hinges on education.,0,education key personal growth personal growth hinge education
+283,Nature walks can be very relaxing.,Walking in nature is a great way to relax.,0,nature walk relaxing walking nature great way relax
+284,Healthy relationships are built on trust.,Trust is the foundation of healthy relationships.,0,healthy relationship built trust trust foundation healthy relationship
+285,Creative hobbies can reduce stress.,Engaging in creative hobbies lowers stress levels.,0,creative hobby reduce stress engaging creative hobby lower stress level
+286,Technology connects people globally.,People around the world are connected by technology.,0,technology connects people globally people around world connected technology
+287,Reading enhances cognitive abilities.,Cognitive skills are improved by reading.,0,reading enhances cognitive ability cognitive skill improved reading
+288,Travel exposes you to new experiences.,New experiences come from traveling.,0,travel expose new experience new experience come traveling
+289,Volunteering gives a sense of fulfillment.,A sense of fulfillment is gained through volunteering.,0,volunteering give sense fulfillment sense fulfillment gained volunteering
+290,Listening to music can boost your mood.,Your mood can be lifted by listening to music.,0,listening music boost mood mood lifted listening music
+291,Reading regularly improves vocabulary.,Vocabulary is improved through regular reading.,0,reading regularly improves vocabulary vocabulary improved regular reading
+292,Traveling broadens cultural understanding.,Cultural understanding is broadened by traveling.,0,traveling broadens cultural understanding cultural understanding broadened traveling
+293,Music can uplift one's mood.,One's mood can be uplifted by music.,0,music uplift one mood one mood uplifted music
+294,Healthy relationships contribute to happiness.,Happiness is increased by healthy relationships.,0,healthy relationship contribute happiness happiness increased healthy relationship
+295,Hobbies can reduce stress levels.,Stress levels are reduced by engaging in hobbies.,0,hobby reduce stress level stress level reduced engaging hobby
+296,Regular check-ups maintain health.,Health is maintained through regular check-ups.,0,regular checkup maintain health health maintained regular checkup
+297,Exercise boosts mental health.,Mental health is boosted by exercise.,0,exercise boost mental health mental health boosted exercise
+298,Creative writing fosters imagination.,Imagination is fostered by creative writing.,0,creative writing foster imagination imagination fostered creative writing
+299,Public speaking skills are valuable.,Valuable skills include public speaking.,0,public speaking skill valuable valuable skill include public speaking
+300,Cooking at home can be healthier.,Healthier meals can be made by cooking at home.,0,cooking home healthier healthier meal made cooking home
+301,Social interactions can enhance well-being.,Well-being is enhanced by social interactions.,0,social interaction enhance wellbeing wellbeing enhanced social interaction
+302,Learning history helps us avoid past mistakes.,Past mistakes are avoided by learning history.,0,learning history help u avoid past mistake past mistake avoided learning history
+303,Nature walks can be rejuvenating.,Rejuvenation can be found in nature walks.,0,nature walk rejuvenating rejuvenation found nature walk
+304,Good financial habits lead to security.,Financial security is achieved through good habits.,0,good financial habit lead security financial security achieved good habit
+305,Writing regularly can improve clarity of thought.,Clarity of thought is improved by regular writing.,0,writing regularly improve clarity thought clarity thought improved regular writing
+306,Strong leadership inspires others.,Others are inspired by strong leadership.,0,strong leadership inspires others others inspired strong leadership
+307,Cultural diversity enriches communities.,Communities are enriched by cultural diversity.,0,cultural diversity enriches community community enriched cultural diversity
+308,Mindfulness practices improve focus.,Focus is improved by mindfulness practices.,0,mindfulness practice improve focus focus improved mindfulness practice
+309,Positive feedback boosts confidence.,Confidence is boosted by positive feedback.,0,positive feedback boost confidence confidence boosted positive feedback
+310,Scientific research drives innovation.,Innovation is driven by scientific research.,0,scientific research drive innovation innovation driven scientific research
+311,Studying regularly improves academic performance.,Academic performance improves with regular studying.,0,studying regularly improves academic performance academic performance improves regular studying
+312,A balanced diet promotes overall health.,Overall health is promoted by a balanced diet.,0,balanced diet promotes overall health overall health promoted balanced diet
+313,Meditation helps in reducing stress.,Stress is reduced by practicing meditation.,0,meditation help reducing stress stress reduced practicing meditation
+314,Team sports build cooperation skills.,Cooperation skills are built through team sports.,0,team sport build cooperation skill cooperation skill built team sport
+315,A good night's sleep enhances productivity.,Productivity is enhanced by a good night's sleep.,0,good night sleep enhances productivity productivity enhanced good night sleep
+316,Recycling conserves natural resources.,Natural resources are conserved through recycling.,0,recycling conserve natural resource natural resource conserved recycling
+317,Reading fiction enhances creativity.,Creativity is enhanced by reading fiction.,0,reading fiction enhances creativity creativity enhanced reading fiction
+318,Volunteering increases community engagement.,Community engagement is increased through volunteering.,0,volunteering increase community engagement community engagement increased volunteering
+319,Learning a new language improves cognitive abilities.,Cognitive abilities are improved by learning a new language.,0,learning new language improves cognitive ability cognitive ability improved learning new language
+320,Practicing gratitude boosts mental health.,Mental health is boosted by practicing gratitude.,0,practicing gratitude boost mental health mental health boosted practicing gratitude
+321,Proper hydration is essential for bodily functions.,Bodily functions rely on proper hydration.,0,proper hydration essential bodily function bodily function rely proper hydration
+322,Artistic activities can be therapeutic.,Therapy can be found in artistic activities.,0,artistic activity therapeutic therapy found artistic activity
+323,Regular exercise strengthens the immune system.,The immune system is strengthened by regular exercise.,0,regular exercise strengthens immune system immune system strengthened regular exercise
+324,Financial literacy leads to better money management.,Better money management is a result of financial literacy.,0,financial literacy lead better money management better money management result financial literacy
+325,Spending time outdoors enhances well-being.,Well-being is enhanced by spending time outdoors.,0,spending time outdoors enhances wellbeing wellbeing enhanced spending time outdoors
+326,Time management skills improve efficiency.,Efficiency is improved by time management skills.,0,time management skill improve efficiency efficiency improved time management skill
+327,Gardening can be a relaxing hobby.,Relaxation can be found in gardening.,0,gardening relaxing hobby relaxation found gardening
+328,Historical knowledge provides valuable insights.,Valuable insights are gained from historical knowledge.,0,historical knowledge provides valuable insight valuable insight gained historical knowledge
+329,Physical activity reduces the risk of chronic diseases.,The risk of chronic diseases is reduced by physical activity.,0,physical activity reduces risk chronic disease risk chronic disease reduced physical activity
+330,Effective communication strengthens relationships.,Relationships are strengthened by effective communication.,0,effective communication strengthens relationship relationship strengthened effective communication
+331,Yoga improves flexibility and balance.,Flexibility and balance are improved by yoga.,0,yoga improves flexibility balance flexibility balance improved yoga
+332,Good hygiene practices prevent illness.,Illness is prevented by good hygiene practices.,0,good hygiene practice prevent illness illness prevented good hygiene practice
+333,Critical thinking enhances problem-solving abilities.,Problem-solving abilities are enhanced by critical thinking.,0,critical thinking enhances problemsolving ability problemsolving ability enhanced critical thinking
+334,Listening to music can be relaxing.,Relaxation can be achieved by listening to music.,0,listening music relaxing relaxation achieved listening music
+335,Gardening provides a sense of accomplishment.,A sense of accomplishment is found in gardening.,0,gardening provides sense accomplishment sense accomplishment found gardening
+336,Learning new skills boosts self-confidence.,Self-confidence is boosted by learning new skills.,0,learning new skill boost selfconfidence selfconfidence boosted learning new skill
+337,Spending time with loved ones improves mental health.,Mental health is improved by spending time with loved ones.,0,spending time loved one improves mental health mental health improved spending time loved one
+338,Reading non-fiction enhances knowledge.,Knowledge is enhanced by reading non-fiction.,0,reading nonfiction enhances knowledge knowledge enhanced reading nonfiction
+339,Playing board games can improve strategic thinking.,Strategic thinking is improved by playing board games.,0,playing board game improve strategic thinking strategic thinking improved playing board game
+340,Practicing mindfulness reduces anxiety.,Anxiety is reduced by practicing mindfulness.,0,practicing mindfulness reduces anxiety anxiety reduced practicing mindfulness
+341,Cooking can be a creative outlet.,Creativity can be expressed through cooking.,0,cooking creative outlet creativity expressed cooking
+342,Traveling expands one's perspective.,Perspectives are expanded through traveling.,0,traveling expands one perspective perspective expanded traveling
+343,Writing in a journal clarifies thoughts.,Thoughts are clarified by writing in a journal.,0,writing journal clarifies thought thought clarified writing journal
+344,Swimming is an excellent full-body workout.,A full-body workout can be achieved through swimming.,0,swimming excellent fullbody workout fullbody workout achieved swimming
+345,Reading to children supports their development.,Children's development is supported by reading to them.,0,reading child support development childrens development supported reading
+346,Cycling is a great form of cardiovascular exercise.,Cardiovascular health benefits from cycling.,0,cycling great form cardiovascular exercise cardiovascular health benefit cycling
+347,Public speaking can enhance leadership skills.,Leadership skills are enhanced by public speaking.,0,public speaking enhance leadership skill leadership skill enhanced public speaking
+348,Photography encourages observation and creativity.,Observation and creativity are encouraged by photography.,0,photography encourages observation creativity observation creativity encouraged photography
+349,Playing musical instruments enhances coordination.,Coordination is enhanced by playing musical instruments.,0,playing musical instrument enhances coordination coordination enhanced playing musical instrument
+350,Meditation can improve concentration.,Concentration is improved by meditation.,0,meditation improve concentration concentration improved meditation
+351,Hiking connects people with nature.,Nature connections are made through hiking.,0,hiking connects people nature nature connection made hiking
+352,Learning to code develops logical thinking.,Logical thinking is developed by learning to code.,0,learning code develops logical thinking logical thinking developed learning code
+353,Reading science fiction stimulates imagination.,Imagination is stimulated by reading science fiction.,0,reading science fiction stimulates imagination imagination stimulated reading science fiction
+354,Knitting can be a soothing activity.,Soothing effects can be found in knitting.,0,knitting soothing activity soothing effect found knitting
+355,Attending workshops facilitates skill development.,Skill development is facilitated by attending workshops.,0,attending workshop facilitates skill development skill development facilitated attending workshop
+356,Gardening teaches patience and persistence.,Patience and persistence are taught through gardening.,0,gardening teach patience persistence patience persistence taught gardening
+357,Using planners can enhance organizational skills.,Organizational skills are enhanced by using planners.,0,using planner enhance organizational skill organizational skill enhanced using planner
+358,Walking daily improves cardiovascular health.,Cardiovascular health is improved by walking daily.,0,walking daily improves cardiovascular health cardiovascular health improved walking daily
+359,Painting allows for creative expression.,Creative expression is allowed through painting.,0,painting allows creative expression creative expression allowed painting
+360,Learning history provides context for the present.,Context for the present is provided by learning history.,0,learning history provides context present context present provided learning history
+361,Exercising outdoors can boost mood.,Mood is boosted by exercising outdoors.,0,exercising outdoors boost mood mood boosted exercising outdoors
+362,Listening actively improves communication.,Communication is improved by active listening.,0,listening actively improves communication communication improved active listening
+363,Playing chess enhances strategic thinking.,Strategic thinking is enhanced by playing chess.,0,playing chess enhances strategic thinking strategic thinking enhanced playing chess
+364,Practicing gratitude fosters a positive mindset.,A positive mindset is fostered by practicing gratitude.,0,practicing gratitude foster positive mindset positive mindset fostered practicing gratitude
+365,Volunteering creates a sense of community.,A sense of community is created through volunteering.,0,volunteering creates sense community sense community created volunteering
+366,Creative hobbies can alleviate stress.,Stress is alleviated by engaging in creative hobbies.,0,creative hobby alleviate stress stress alleviated engaging creative hobby
+367,Writing essays improves argumentative skills.,Argumentative skills are improved by writing essays.,0,writing essay improves argumentative skill argumentative skill improved writing essay
+368,Keeping a journal can enhance self-awareness.,Self-awareness is enhanced by keeping a journal.,0,keeping journal enhance selfawareness selfawareness enhanced keeping journal
+369,Dancing improves physical fitness.,Physical fitness is improved by dancing.,0,dancing improves physical fitness physical fitness improved dancing
+370,Reading biographies offers life lessons.,Life lessons are offered by reading biographies.,0,reading biography offer life lesson life lesson offered reading biography
+371,Mindfulness meditation enhances emotional regulation.,Emotional regulation is enhanced by mindfulness meditation.,0,mindfulness meditation enhances emotional regulation emotional regulation enhanced mindfulness meditation
+372,Playing team sports builds camaraderie.,Camaraderie is built through playing team sports.,0,playing team sport build camaraderie camaraderie built playing team sport
+373,Gardening provides physical exercise.,Physical exercise is provided by gardening.,0,gardening provides physical exercise physical exercise provided gardening
+374,Learning a musical instrument can be fulfilling.,Fulfillment can be found in learning a musical instrument.,0,learning musical instrument fulfilling fulfillment found learning musical instrument
+375,Playing strategy games develops critical thinking.,Critical thinking is developed by playing strategy games.,0,playing strategy game develops critical thinking critical thinking developed playing strategy game
+376,Attending seminars broadens knowledge.,Knowledge is broadened by attending seminars.,0,attending seminar broadens knowledge knowledge broadened attending seminar
+377,Painting can be a meditative activity.,Meditation can be found in painting.,0,painting meditative activity meditation found painting
+378,Journaling can be a therapeutic activity.,Therapy can be found in journaling.,0,journaling therapeutic activity therapy found journaling
+379,Socializing reduces feelings of loneliness.,Feelings of loneliness are reduced by socializing.,0,socializing reduces feeling loneliness feeling loneliness reduced socializing
+380,Cooking from scratch promotes healthier eating.,Healthier eating is promoted by cooking from scratch.,0,cooking scratch promotes healthier eating healthier eating promoted cooking scratch
+381,Gardening teaches responsibility and care.,Responsibility and care are taught through gardening.,0,gardening teach responsibility care responsibility care taught gardening
+382,Practicing yoga improves mental clarity.,Mental clarity is improved by practicing yoga.,0,practicing yoga improves mental clarity mental clarity improved practicing yoga
+383,Photography captures memories.,Memories are captured through photography.,0,photography capture memory memory captured photography
+384,Reading improves language skills.,Language skills are improved by reading.,0,reading improves language skill language skill improved reading
+385,Learning about different cultures enhances empathy.,Empathy is enhanced by learning about different cultures.,0,learning different culture enhances empathy empathy enhanced learning different culture
+386,Practicing mindfulness reduces stress.,Stress is reduced by practicing mindfulness.,0,practicing mindfulness reduces stress stress reduced practicing mindfulness
+387,Regular exercise improves physical health.,Physical health is improved by regular exercise.,0,regular exercise improves physical health physical health improved regular exercise
+388,Listening to music can elevate mood.,Mood is elevated by listening to music.,0,listening music elevate mood mood elevated listening music
+389,Gardening provides a connection to nature.,A connection to nature is provided by gardening.,0,gardening provides connection nature connection nature provided gardening
+390,Writing essays enhances research skills.,Research skills are enhanced by writing essays.,0,writing essay enhances research skill research skill enhanced writing essay
+391,Volunteering builds a sense of purpose.,A sense of purpose is built through volunteering.,0,volunteering build sense purpose sense purpose built volunteering
+392,Swimming provides a full-body workout.,A full-body workout is provided by swimming.,0,swimming provides fullbody workout fullbody workout provided swimming
+393,Cycling improves cardiovascular health.,Cardiovascular health is improved by cycling.,0,cycling improves cardiovascular health cardiovascular health improved cycling
+394,Cooking at home promotes family bonding.,Family bonding is promoted by cooking at home.,0,cooking home promotes family bonding family bonding promoted cooking home
+395,Learning history helps understand societal development.,Societal development is understood by learning history.,0,learning history help understand societal development societal development understood learning history
+396,Reading fiction improves empathy.,Empathy is improved by reading fiction.,0,reading fiction improves empathy empathy improved reading fiction
+397,Playing musical instruments enhances creativity.,Creativity is enhanced by playing musical instruments.,0,playing musical instrument enhances creativity creativity enhanced playing musical instrument
+398,Studying history helps in understanding the present.,Understanding the present is aided by studying history.,0,studying history help understanding present understanding present aided studying history
+399,Listening to classical music can improve focus.,Focus is improved by listening to classical music.,0,listening classical music improve focus focus improved listening classical music
+400,Practicing yoga enhances physical flexibility.,Physical flexibility is enhanced by practicing yoga.,0,practicing yoga enhances physical flexibility physical flexibility enhanced practicing yoga
+401,Volunteering fosters community spirit.,Community spirit is fostered by volunteering.,0,volunteering foster community spirit community spirit fostered volunteering
