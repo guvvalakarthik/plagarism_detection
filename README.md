@@ -83,6 +83,6 @@ The model is trained on the **IR-Plag Dataset**, which contains labeled pairs of
 
 ## 🧑‍💻 Author
 
-**Vinay Kumar**  
+**KARTHIK GUVVALA**  
 NLP & Machine Learning Enthusiast  
 
