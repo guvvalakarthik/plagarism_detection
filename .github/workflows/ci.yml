@@ -8,10 +8,6 @@ on:
 permissions:
   contents: read
 
-defaults:
-  run:
-    working-directory: PLAGIARISM_DETECTION_NLP-main
-
 jobs:
   quality:
     runs-on: ubuntu-latest
@@ -37,7 +33,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: PLAGIARISM_DETECTION_NLP-main/pyproject.toml
+          cache-dependency-path: pyproject.toml
       - run: python -m pip install --upgrade pip
       - run: pip install -e ".[dev,storage]"
       - run: ruff check .
