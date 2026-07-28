@@ -37,6 +37,6 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: pip install -e ".[dev,storage]"
       - run: ruff check .
-      - run: pytest
+      - run: python -m pytest
       - run: python scripts/evaluate.py dataset_new.csv
       - run: docker build -t sourcelens:test .
