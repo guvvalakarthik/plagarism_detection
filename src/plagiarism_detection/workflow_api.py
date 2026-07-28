@@ -23,8 +23,8 @@ from .auth import ApiKeyAuthenticator
 from .extractors import MAX_UPLOAD_BYTES
 from .ingestion import CorpusIngestionService
 from .observability import MetricsRegistry, SlidingWindowRateLimiter
-from .retrieval import HashingNgramEmbedder
-from .storage import PostgresCorpusRepository
+from .retrieval import Embedder, HashingNgramEmbedder
+from .storage import CorpusRepository, PostgresCorpusRepository
 from .workflow import (
     AsyncIngestionWorkflow,
     PostgresWorkflowRepository,
@@ -43,11 +43,20 @@ class FeedbackRequest(BaseModel):
     note: str | None = Field(default=None, max_length=2_000)
 
 
+class SearchRequest(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+
+    query: str = Field(min_length=3, max_length=5_000)
+    limit: int = Field(default=10, ge=1, le=50)
+
+
 @dataclass(slots=True)
 class WorkflowRuntime:
     authenticator: ApiKeyAuthenticator
     jobs: AsyncIngestionWorkflow
     repository: PostgresWorkflowRepository
+    corpus_repository: CorpusRepository
+    embedder: Embedder
     metrics: MetricsRegistry
     limiter: SlidingWindowRateLimiter
 
@@ -82,6 +91,8 @@ def runtime_from_environment() -> WorkflowRuntime:
         authenticator=authenticator,
         jobs=jobs,
         repository=workflow_repository,
+        corpus_repository=corpus_repository,
+        embedder=embedder,
         metrics=metrics,
         limiter=SlidingWindowRateLimiter(),
     )
@@ -164,6 +175,39 @@ async def get_job(
     if job is None:
         raise HTTPException(status_code=404, detail="job not found")
     return asdict(job)
+
+
+@router.post("/{workspace_id}/search")
+async def search_workspace(
+    workspace_id: uuid.UUID,
+    payload: SearchRequest,
+    x_api_key: Annotated[str | None, Header()] = None,
+) -> dict[str, object]:
+    workspace_value = str(workspace_id)
+    runtime = authorize(workspace_value, x_api_key)
+    query_embedding = runtime.embedder.encode([payload.query])[0]
+    hits = runtime.corpus_repository.search(
+        workspace_value,
+        query_embedding,
+        payload.limit,
+    )
+    runtime.metrics.increment("workspace_search_total", outcome="success")
+    return {
+        "query": payload.query,
+        "method": runtime.embedder.name,
+        "hits": [
+            {
+                "passage_id": hit.passage.passage_id,
+                "document_id": hit.passage.document_id,
+                "content": hit.passage.content,
+                "start_offset": hit.passage.start_offset,
+                "end_offset": hit.passage.end_offset,
+                "score": hit.score,
+                "embedding_method": hit.passage.embedding_method,
+            }
+            for hit in hits
+        ],
+    }
 
 
 @router.post(

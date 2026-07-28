@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Compare two documents and inspect the matching evidence."
+      content="Upload, search, and review document similarity evidence with SourceLens."
     />
-    <title>SourceLens — Evidence-first similarity review</title>
+    <title>SourceLens &mdash; Evidence-first similarity review</title>
     <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/dashboard.css" />
     <script src="/static/app.js" defer></script>
   </head>
   <body>
@@ -17,7 +18,10 @@
         <span class="brand-mark" aria-hidden="true">SL</span>
         <span>SourceLens</span>
       </a>
-      <a class="api-link" href="/docs">API docs <span aria-hidden="true">↗</span></a>
+      <div class="header-actions">
+        <span class="system-state"><i aria-hidden="true"></i> Evidence service</span>
+        <a class="api-link" href="/docs">API docs <span aria-hidden="true">&nearr;</span></a>
+      </div>
     </header>
 
     <main class="shell">
@@ -25,79 +29,206 @@
         <p class="eyebrow">Evidence-first text review</p>
         <h1>Find overlap.<br /><span>Review the evidence.</span></h1>
         <p class="lede">
-          Compare a candidate with a known source. SourceLens reports transparent
-          similarity signals and matching passages—never an invented probability.
+          Compare a candidate with a known source, or ingest a workspace corpus
+          and review ranked passages. SourceLens reports transparent similarity
+          signals&mdash;never an invented probability.
         </p>
       </section>
 
-      <form id="analysis-form" class="workspace">
-        <div class="document-grid">
-          <label class="document-card">
-            <span class="document-label">
-              <span>01</span>
-              Known source
-            </span>
-            <textarea
-              id="source"
-              name="source"
-              minlength="10"
-              maxlength="100000"
-              required
-              placeholder="Paste the original or reference document here…"
-            ></textarea>
-            <small><output id="source-count">0</output> characters</small>
-          </label>
+      <nav class="mode-switch" aria-label="Review mode">
+        <button class="mode-button is-active" type="button" data-mode="compare">
+          <span>01</span>
+          Quick comparison
+        </button>
+        <button class="mode-button" type="button" data-mode="workspace">
+          <span>02</span>
+          Workspace review
+        </button>
+      </nav>
 
-          <label class="document-card">
-            <span class="document-label">
-              <span>02</span>
-              Candidate
-            </span>
-            <textarea
-              id="candidate"
-              name="candidate"
-              minlength="10"
-              maxlength="100000"
-              required
-              placeholder="Paste the text you want to review…"
-            ></textarea>
-            <small><output id="candidate-count">0</output> characters</small>
-          </label>
-        </div>
-        <div class="actions">
-          <p>Text stays in memory for this request and is not persisted.</p>
-          <button id="analyze" type="submit">
-            <span>Analyze overlap</span>
-            <span aria-hidden="true">→</span>
-          </button>
-        </div>
-      </form>
+      <section id="compare-panel" class="mode-panel">
+        <form id="analysis-form" class="workspace">
+          <div class="document-grid">
+            <label class="document-card">
+              <span class="document-label">
+                <span>01</span>
+                Known source
+              </span>
+              <textarea
+                id="source"
+                name="source"
+                minlength="10"
+                maxlength="100000"
+                required
+                placeholder="Paste the original or reference document here&hellip;"
+              ></textarea>
+              <small><output id="source-count">0</output> characters</small>
+            </label>
 
-      <section id="results" class="results" hidden aria-live="polite">
-        <div class="result-summary">
-          <div>
-            <p class="eyebrow">Review result</p>
-            <h2 id="verdict">Analysis complete</h2>
-            <p id="interpretation"></p>
+            <label class="document-card">
+              <span class="document-label">
+                <span>02</span>
+                Candidate
+              </span>
+              <textarea
+                id="candidate"
+                name="candidate"
+                minlength="10"
+                maxlength="100000"
+                required
+                placeholder="Paste the text you want to review&hellip;"
+              ></textarea>
+              <small><output id="candidate-count">0</output> characters</small>
+            </label>
           </div>
-          <div class="score">
-            <strong id="score">0</strong>
-            <span>/ 100 similarity</span>
+          <div class="actions">
+            <p>Text stays in memory for this request and is not persisted.</p>
+            <button id="analyze" type="submit">
+              <span>Analyze overlap</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </form>
+
+        <section id="results" class="results" hidden aria-live="polite">
+          <div class="result-summary">
+            <div>
+              <p class="eyebrow">Review result</p>
+              <h2 id="verdict">Analysis complete</h2>
+              <p id="interpretation"></p>
+            </div>
+            <div class="score">
+              <strong id="score">0</strong>
+              <span>/ 100 similarity</span>
+            </div>
+          </div>
+          <div class="metrics">
+            <div><span>Lexical</span><strong id="lexical">0%</strong></div>
+            <div><span>Character</span><strong id="character">0%</strong></div>
+            <div><span>Candidate coverage</span><strong id="coverage">0%</strong></div>
+          </div>
+          <div class="evidence-heading">
+            <div>
+              <p class="eyebrow">Matched passages</p>
+              <h3>Evidence for human review</h3>
+            </div>
+            <span id="evidence-count">0 matches</span>
+          </div>
+          <div id="evidence" class="evidence-list"></div>
+        </section>
+      </section>
+
+      <section id="workspace-panel" class="mode-panel" hidden>
+        <div class="review-layout">
+          <aside class="connection-card">
+            <p class="eyebrow">Secure workspace</p>
+            <h2>Connect your review corpus</h2>
+            <p class="section-copy">
+              Credentials stay in this browser tab and are sent only in the
+              <code>x-api-key</code> request header.
+            </p>
+            <label class="field">
+              <span>Workspace UUID</span>
+              <input
+                id="workspace-id"
+                type="text"
+                inputmode="text"
+                autocomplete="off"
+                placeholder="00000000-0000-0000-0000-000000000000"
+              />
+            </label>
+            <label class="field">
+              <span>API key</span>
+              <input
+                id="api-key"
+                type="password"
+                autocomplete="off"
+                placeholder="Enter workspace API key"
+              />
+            </label>
+            <button id="save-connection" class="secondary-button" type="button">
+              Use this workspace
+            </button>
+            <p id="connection-status" class="inline-status" aria-live="polite">
+              Not connected
+            </p>
+          </aside>
+
+          <div class="workflow-stack">
+            <section class="workflow-card">
+              <div class="step-heading">
+                <span>01</span>
+                <div>
+                  <p class="eyebrow">Build the corpus</p>
+                  <h2>Upload a source document</h2>
+                </div>
+              </div>
+              <p class="section-copy">
+                TXT, PDF, and DOCX files are extracted asynchronously. Uploads are
+                limited to 10 MB and raw bytes are not persisted.
+              </p>
+              <form id="upload-form" class="upload-row">
+                <label class="file-picker">
+                  <input
+                    id="document-file"
+                    name="file"
+                    type="file"
+                    accept=".txt,.pdf,.docx,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    required
+                  />
+                  <span id="file-label">Choose a document</span>
+                </label>
+                <button id="upload-document" type="submit">Upload &amp; index</button>
+              </form>
+              <div id="job-status" class="job-status" hidden aria-live="polite">
+                <div class="status-line">
+                  <span id="job-indicator" class="status-dot" aria-hidden="true"></span>
+                  <strong id="job-title">Queued</strong>
+                  <span id="job-detail"></span>
+                </div>
+                <div class="progress-track" aria-hidden="true">
+                  <span id="job-progress"></span>
+                </div>
+              </div>
+            </section>
+
+            <section class="workflow-card">
+              <div class="step-heading">
+                <span>02</span>
+                <div>
+                  <p class="eyebrow">Retrieve evidence</p>
+                  <h2>Search workspace passages</h2>
+                </div>
+              </div>
+              <form id="search-form" class="search-row">
+                <label class="field grow">
+                  <span>Candidate passage or idea</span>
+                  <textarea
+                    id="search-query"
+                    minlength="3"
+                    maxlength="5000"
+                    required
+                    placeholder="Paste a passage to find related sources&hellip;"
+                  ></textarea>
+                </label>
+                <label class="field compact">
+                  <span>Results</span>
+                  <select id="search-limit">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                  </select>
+                </label>
+                <button id="search-workspace" type="submit">Search evidence</button>
+              </form>
+              <div class="search-summary" id="search-summary" hidden aria-live="polite">
+                <span id="search-count">0 passages</span>
+                <span id="search-method"></span>
+              </div>
+              <div id="workspace-results" class="workspace-results"></div>
+            </section>
           </div>
         </div>
-        <div class="metrics">
-          <div><span>Lexical</span><strong id="lexical">0%</strong></div>
-          <div><span>Character</span><strong id="character">0%</strong></div>
-          <div><span>Candidate coverage</span><strong id="coverage">0%</strong></div>
-        </div>
-        <div class="evidence-heading">
-          <div>
-            <p class="eyebrow">Matched passages</p>
-            <h3>Evidence for human review</h3>
-          </div>
-          <span id="evidence-count">0 matches</span>
-        </div>
-        <div id="evidence" class="evidence-list"></div>
       </section>
 
       <section class="principles">
@@ -105,8 +236,8 @@
         <div class="principle-grid">
           <article>
             <span>01</span>
-            <h3>Pairwise by design</h3>
-            <p>The source and candidate are compared symmetrically at every stage.</p>
+            <h3>Workspace isolation</h3>
+            <p>Authentication and database policies scope every production query.</p>
           </article>
           <article>
             <span>02</span>
@@ -115,12 +246,14 @@
           </article>
           <article>
             <span>03</span>
-            <h3>Honest scores</h3>
-            <p>Similarity is clearly separated from probability and misconduct.</p>
+            <h3>Human feedback</h3>
+            <p>Review decisions are recorded without silently retraining the model.</p>
           </article>
         </div>
       </section>
     </main>
+
+    <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
 
     <footer class="shell">
       <span>SourceLens v2</span>
