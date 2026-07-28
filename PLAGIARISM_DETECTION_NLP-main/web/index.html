@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Compare two documents and inspect the matching evidence."
+    />
+    <title>SourceLens — Evidence-first similarity review</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header class="shell masthead">
+      <a class="brand" href="/" aria-label="SourceLens home">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>SourceLens</span>
+      </a>
+      <a class="api-link" href="/docs">API docs <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Evidence-first text review</p>
+        <h1>Find overlap.<br /><span>Review the evidence.</span></h1>
+        <p class="lede">
+          Compare a candidate with a known source. SourceLens reports transparent
+          similarity signals and matching passages—never an invented probability.
+        </p>
+      </section>
+
+      <form id="analysis-form" class="workspace">
+        <div class="document-grid">
+          <label class="document-card">
+            <span class="document-label">
+              <span>01</span>
+              Known source
+            </span>
+            <textarea
+              id="source"
+              name="source"
+              minlength="10"
+              maxlength="100000"
+              required
+              placeholder="Paste the original or reference document here…"
+            ></textarea>
+            <small><output id="source-count">0</output> characters</small>
+          </label>
+
+          <label class="document-card">
+            <span class="document-label">
+              <span>02</span>
+              Candidate
+            </span>
+            <textarea
+              id="candidate"
+              name="candidate"
+              minlength="10"
+              maxlength="100000"
+              required
+              placeholder="Paste the text you want to review…"
+            ></textarea>
+            <small><output id="candidate-count">0</output> characters</small>
+          </label>
+        </div>
+        <div class="actions">
+          <p>Text stays in memory for this request and is not persisted.</p>
+          <button id="analyze" type="submit">
+            <span>Analyze overlap</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </form>
+
+      <section id="results" class="results" hidden aria-live="polite">
+        <div class="result-summary">
+          <div>
+            <p class="eyebrow">Review result</p>
+            <h2 id="verdict">Analysis complete</h2>
+            <p id="interpretation"></p>
+          </div>
+          <div class="score">
+            <strong id="score">0</strong>
+            <span>/ 100 similarity</span>
+          </div>
+        </div>
+        <div class="metrics">
+          <div><span>Lexical</span><strong id="lexical">0%</strong></div>
+          <div><span>Character</span><strong id="character">0%</strong></div>
+          <div><span>Candidate coverage</span><strong id="coverage">0%</strong></div>
+        </div>
+        <div class="evidence-heading">
+          <div>
+            <p class="eyebrow">Matched passages</p>
+            <h3>Evidence for human review</h3>
+          </div>
+          <span id="evidence-count">0 matches</span>
+        </div>
+        <div id="evidence" class="evidence-list"></div>
+      </section>
+
+      <section class="principles">
+        <p class="eyebrow">Designed for defensibility</p>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h3>Pairwise by design</h3>
+            <p>The source and candidate are compared symmetrically at every stage.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Evidence, not accusation</h3>
+            <p>Offsets and matched text let reviewers verify every signal.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Honest scores</h3>
+            <p>Similarity is clearly separated from probability and misconduct.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <span>SourceLens v2</span>
+      <span>Human judgment remains essential.</span>
+    </footer>
+  </body>
+</html>

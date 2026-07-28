@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sourcelens"
+version = "2.0.0"
+description = "Evidence-first pairwise text similarity for plagiarism review"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Karthik Guvvala" }]
+dependencies = [
+  "fastapi>=0.116,<1",
+  "pydantic>=2.11,<3",
+  "uvicorn[standard]>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx>=0.28,<1",
+  "pytest>=8.4,<9",
+  "pytest-cov>=6.2,<7",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+sourcelens = "plagiarism_detection.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/plagiarism_detection"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"web" = "plagiarism_detection/web"
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=plagiarism_detection --cov-report=term-missing --cov-fail-under=85"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

@@ -1,0 +1,43 @@
+{
+  "method": "deterministic_source_group_split",
+  "seed": 42,
+  "rows": 370,
+  "unique_source_groups": 365,
+  "calibration_rows": 278,
+  "test_rows": 92,
+  "source_group_leakage": 0,
+  "calibration_metrics": {
+    "threshold": 0.62,
+    "precision": 0.5661,
+    "recall": 0.9448,
+    "f1": 0.708,
+    "true_positive": 137,
+    "false_positive": 105,
+    "true_negative": 28,
+    "false_negative": 8
+  },
+  "held_out_test_metrics": {
+    "threshold": 0.62,
+    "precision": 0.4615,
+    "recall": 0.9474,
+    "f1": 0.6207,
+    "true_positive": 36,
+    "false_positive": 42,
+    "true_negative": 12,
+    "false_negative": 2
+  },
+  "production_policy": {
+    "review_threshold": 0.36,
+    "high_overlap_threshold": 0.64,
+    "evidence_threshold": 0.3,
+    "max_evidence": 8,
+    "min_document_tokens": 3,
+    "min_segment_tokens": 4,
+    "max_segment_tokens": 80
+  },
+  "limitations": [
+    "The included 370-row dataset contains short synthetic sentences.",
+    "Labels do not establish plagiarism without citation and authorship context.",
+    "Metrics are a baseline smoke benchmark, not production validation."
+  ]
+}
