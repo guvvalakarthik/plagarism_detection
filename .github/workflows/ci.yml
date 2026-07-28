@@ -39,4 +39,5 @@ jobs:
       - run: ruff check .
       - run: python -m pytest
       - run: python scripts/evaluate.py dataset_new.csv
+      - run: python scripts/benchmark_models.py dataset_new.csv --output reports/model_comparison_ci.json
       - run: docker build -t sourcelens:test .
