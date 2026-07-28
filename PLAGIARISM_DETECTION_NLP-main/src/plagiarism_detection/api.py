@@ -11,6 +11,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from . import __version__
 from .analyzer import PairwiseAnalyzer
+from .observability import RequestIdMiddleware
+from .retrieval_api import router as retrieval_router
+from .workflow_api import router as workflow_router
 
 MAX_DOCUMENT_LENGTH = 100_000
 PACKAGE_WEB_DIRECTORY = Path(__file__).resolve().parent / "web"
@@ -56,6 +59,9 @@ app = FastAPI(
 )
 analyzer = PairwiseAnalyzer()
 app.mount("/static", StaticFiles(directory=WEB_DIRECTORY), name="static")
+app.add_middleware(RequestIdMiddleware)
+app.include_router(retrieval_router)
+app.include_router(workflow_router)
 
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
