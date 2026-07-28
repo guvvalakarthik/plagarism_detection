@@ -8,8 +8,10 @@ WORKDIR /app
 RUN addgroup --system app && adduser --system --ingroup app app
 COPY pyproject.toml README.md ./
 COPY src ./src
+COPY migrations ./migrations
+COPY scripts ./scripts
 COPY web ./web
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir ".[storage]"
 
 USER app
 EXPOSE 8000
