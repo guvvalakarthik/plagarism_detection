@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "dataset": "dataset_new.csv",
+  "dataset_fingerprint": "95438c44b94f9b4afaa4975c7f27b4afdeb1b50182ab3a6a585262a57d68230e",
+  "seed": 42,
+  "pairs": 370,
+  "positive_pairs": 183,
+  "negative_pairs": 187,
+  "unique_source_groups": 365,
+  "calibration_pairs": 276,
+  "held_out_test_pairs": 94,
+  "source_group_leakage": 0,
+  "models": [
+    {
+      "model": "pairwise-analyzer-v2",
+      "threshold": 0.7134,
+      "calibration": {
+        "examples": 276,
+        "precision": 0.5829,
+        "recall": 0.7786,
+        "f1": 0.6667,
+        "accuracy": 0.6304,
+        "true_positive": 102,
+        "false_positive": 73,
+        "true_negative": 72,
+        "false_negative": 29
+      },
+      "held_out_test": {
+        "examples": 94,
+        "precision": 0.6981,
+        "recall": 0.7115,
+        "f1": 0.7048,
+        "accuracy": 0.6702,
+        "true_positive": 37,
+        "false_positive": 16,
+        "true_negative": 26,
+        "false_negative": 15
+      },
+      "average_precision": 0.7811,
+      "latency_ms": {
+        "mean": 0.574,
+        "p50": 0.472,
+        "p95": 1.188
+      },
+      "score_summary": {
+        "minimum": 0.1574,
+        "maximum": 0.9652,
+        "mean": 0.726557
+      },
+      "categories": {
+        "negative": {
+          "examples": 42,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.619,
+          "true_positive": 0,
+          "false_positive": 16,
+          "true_negative": 26,
+          "false_negative": 0
+        },
+        "positive": {
+          "examples": 52,
+          "precision": 1.0,
+          "recall": 0.7115,
+          "f1": 0.8315,
+          "accuracy": 0.7115,
+          "true_positive": 37,
+          "false_positive": 0,
+          "true_negative": 0,
+          "false_negative": 15
+        }
+      }
+    },
+    {
+      "model": "cosine:hashing-ngram-256",
+      "threshold": 0.739704,
+      "calibration": {
+        "examples": 276,
+        "precision": 0.5455,
+        "recall": 0.8244,
+        "f1": 0.6565,
+        "accuracy": 0.5906,
+        "true_positive": 108,
+        "false_positive": 90,
+        "true_negative": 55,
+        "false_negative": 23
+      },
+      "held_out_test": {
+        "examples": 94,
+        "precision": 0.6129,
+        "recall": 0.7308,
+        "f1": 0.6667,
+        "accuracy": 0.5957,
+        "true_positive": 38,
+        "false_positive": 24,
+        "true_negative": 18,
+        "false_negative": 14
+      },
+      "average_precision": 0.7444,
+      "latency_ms": {
+        "mean": 0.59,
+        "p50": 0.498,
+        "p95": 1.182
+      },
+      "score_summary": {
+        "minimum": 0.261279,
+        "maximum": 0.94626,
+        "mean": 0.767288
+      },
+      "categories": {
+        "negative": {
+          "examples": 42,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.4286,
+          "true_positive": 0,
+          "false_positive": 24,
+          "true_negative": 18,
+          "false_negative": 0
+        },
+        "positive": {
+          "examples": 52,
+          "precision": 1.0,
+          "recall": 0.7308,
+          "f1": 0.8444,
+          "accuracy": 0.7308,
+          "true_positive": 38,
+          "false_positive": 0,
+          "true_negative": 0,
+          "false_negative": 14
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "The bundled CSV contains short synthetic sentences.",
+    "Its labels do not establish plagiarism, permission, or missing attribution.",
+    "Use a representative licensed passage corpus before making quality claims."
+  ]
+}
