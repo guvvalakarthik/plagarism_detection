@@ -26,9 +26,10 @@ def runtime(workspace_id: str) -> WorkflowRuntime:
     corpus = MemoryCorpusRepository()
     repository = MemoryWorkflowRepository()
     metrics = MetricsRegistry()
+    embedder = HashingNgramEmbedder(32)
     jobs = AsyncIngestionWorkflow(
         corpus_repository=corpus,
-        ingestion=CorpusIngestionService(corpus, HashingNgramEmbedder(32)),
+        ingestion=CorpusIngestionService(corpus, embedder),
         workflow_repository=repository,
         metrics=metrics,
         workers=1,
@@ -37,12 +38,14 @@ def runtime(workspace_id: str) -> WorkflowRuntime:
         authenticator=ApiKeyAuthenticator({API_KEY: workspace_id}),
         jobs=jobs,
         repository=repository,
+        corpus_repository=corpus,
+        embedder=embedder,
         metrics=metrics,
         limiter=SlidingWindowRateLimiter(requests=100),
     )
 
 
-def test_authenticated_upload_job_and_feedback() -> None:
+def test_authenticated_upload_search_job_and_feedback() -> None:
     workspace_id = str(uuid.uuid4())
     configured = runtime(workspace_id)
     configure_runtime(configured)
@@ -74,12 +77,25 @@ def test_authenticated_upload_job_and_feedback() -> None:
         time.sleep(0.01)
     assert job["status"] == "ready"
 
+    search = client.post(
+        f"/v1/workspaces/{workspace_id}/search",
+        headers=headers,
+        json={"query": "representative evaluation evidence", "limit": 5},
+    )
+    assert search.status_code == 200
+    search_payload = search.json()
+    assert search_payload["method"] == "hashing-ngram-32"
+    assert search_payload["hits"]
+    first_hit = search_payload["hits"][0]
+    assert first_hit["document_id"] == job["document_id"]
+    assert first_hit["score"] > 0
+
     feedback = client.post(
         f"/v1/workspaces/{workspace_id}/feedback",
         headers=headers,
         json={
-            "document_id": job["document_id"],
-            "evidence_id": "candidate:0:20",
+            "document_id": first_hit["document_id"],
+            "evidence_id": first_hit["passage_id"],
             "decision": "properly_cited",
             "note": "Quotation includes a source citation.",
         },
@@ -90,6 +106,7 @@ def test_authenticated_upload_job_and_feedback() -> None:
     metrics = client.get("/v1/workspaces/-/metrics")
     assert metrics.status_code == 200
     assert "sourcelens_ingestion_jobs_total" in metrics.text
+    assert "sourcelens_workspace_search_total" in metrics.text
     configured.jobs.shutdown()
     configure_runtime(None)
 
@@ -111,6 +128,27 @@ def test_workflow_rejects_missing_and_cross_workspace_credentials() -> None:
 
     assert missing.status_code == 401
     assert forbidden.status_code == 403
+    configured.jobs.shutdown()
+    configure_runtime(None)
+
+
+def test_workspace_search_validates_payload_and_credentials() -> None:
+    workspace_id = str(uuid.uuid4())
+    configured = runtime(workspace_id)
+    configure_runtime(configured)
+
+    invalid = client.post(
+        f"/v1/workspaces/{workspace_id}/search",
+        headers={"x-api-key": API_KEY},
+        json={"query": "x", "limit": 0},
+    )
+    missing_key = client.post(
+        f"/v1/workspaces/{workspace_id}/search",
+        json={"query": "valid search query"},
+    )
+
+    assert invalid.status_code == 422
+    assert missing_key.status_code == 401
     configured.jobs.shutdown()
     configure_runtime(None)
 
